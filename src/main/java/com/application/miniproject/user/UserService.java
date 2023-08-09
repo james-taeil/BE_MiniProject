@@ -171,8 +171,6 @@ public class UserService {
 
         }
 
-//
-
         userPS.update(modifyDTO.toEntity(email, newPassword, username, imageUrl));
         return UserResponse.UserDetailDTO.builder()
                 .userId(userPS.getId())
